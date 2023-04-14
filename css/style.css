@@ -22,3 +22,88 @@ button,
 input {
   font-family: inherit;
 }
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+}
+
+
+.back {
+}
+.header {
+}
+.logo {
+}
+.logo-img {
+}
+.menu {
+}
+.menu-item {
+}
+.main {
+}
+.section {
+}
+.article-container {
+}
+.article-li {
+}
+.article-list {
+}
+.article-list-item {
+}
+.article-list-item-container {
+}
+.container-label {
+}
+.container-label-text {
+}
+.article-list-item-author {
+}
+.author-info {
+}
+.author-info-name {
+}
+.author-info-date {
+}
+.article-list-item-head {
+}
+.article-list-item-text {
+}
+.article-list-item-link {
+}
+.archive {
+}
+.archive-text {
+}
+.archive-button {
+}
+.stories {
+}
+.stories-header {
+}
+.stories-text {
+}
+.stories-list {
+}
+.stories-list-item {
+}
+.stories-list-item-container {
+}
+.stories-list-item-author {
+}
+.stories-list-item-text {
+}
+.stories-text-anchor {
+}
+.footer {
+}
+.footer-text-f {
+}
+.footer-text-s {
+}
+.footer-text-t {
+}
