@@ -1,3 +1,8 @@
+:root{
+  --main: #fff;
+  --link: #8D4FDB;
+}
+
 *,
 *::before,
 *::after {
@@ -10,7 +15,8 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+body {
   margin: 0;
   padding: 0;
 }
@@ -42,14 +48,29 @@ body{
   margin: 0 auto;
 }
 .header {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px
 }
 .logo {
+  margin-bottom: 52px;
 }
 .logo-img {
 }
 .menu {
+  display: flex;
+  width: 568px;
+  justify-content: space-between;
 }
 .menu-item {
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--main)
 }
 .main {
 }
@@ -65,21 +86,22 @@ body{
   background-color: white;
 }
 .article-list-item-container {
+  height: 330px;
 }
 .article-one{
-  background: url(/image/IMAGE\ \(1\)\ 1.png);
+  background: url(/image/IMAGE\ \(1\)\ 1.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .article-two{
-  background: url(/image/IMAGE\ \(2\)\ 1.png);
+  background: url(/image/IMAGE\ \(2\)\ 1.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .article-three{
-  background: url(/image/IMAGE\ \(3\)\ 1.png);
+  background: url(/image/IMAGE\ \(3\)\ 1.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -98,9 +120,18 @@ body{
 }
 .article-list-item-head {
 }
+.article-list-item-continue {
+  padding: 36px 76px 44px 60px;
+}
 .article-list-item-text {
 }
 .article-list-item-link {
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 30px;
+
+  color: var(--link)
 }
 .archive {
 }
@@ -121,19 +152,19 @@ body{
 .stories-list-item-container {
 }
 .stories-one{
-  background: url(/image/IMAGE\ \(1\)\ 2.png);
+  background: url(/image/IMAGE\ \(1\)\ 2.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .stories-two{
-  background: url(/image/IMAGE\ \(2\)\ 2.png);
+  background: url(/image/IMAGE\ \(2\)\ 2.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .stories-three{
-  background: url(/image/IMAGE\ \(3\)\ 2.png);
+  background: url(/image/IMAGE\ \(3\)\ 2.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
