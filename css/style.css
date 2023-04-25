@@ -1,6 +1,9 @@
 :root{
   --main: #fff;
   --link: #8D4FDB;
+  --archiv: #F1F1F1;
+  --footer-text: #8B8B8B;
+
 }
 
 *,
@@ -43,9 +46,14 @@ body{
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+.container{
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0px;
+}
 .container-one{
   width: 800px;
   margin: 0 auto;
+  padding-bottom: 99px;
 }
 .header {
   padding-top: 60px;
@@ -87,6 +95,8 @@ body{
 }
 .article-list-item-container {
   height: 330px;
+
+  border-top: 1px solid rgb(255, 255, 255) ; 
 }
 .article-one{
   background: url(/image/IMAGE\ \(1\)\ 1.jpg);
@@ -109,6 +119,23 @@ body{
 .container-label {
 }
 .container-label-text {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 20px;
+
+  font-size: 8px;
+  line-height: 24px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--main);
+
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 1px 10px 0px 10px;
+  width: 60px;
+  height: 25px;
+
 }
 .article-list-item-author {
 }
@@ -134,10 +161,34 @@ body{
   color: var(--link)
 }
 .archive {
+  height: 211px;
+  background-color: var(--archiv);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .archive-text {
+  font-size: 30px;
+  line-height: 36px;
 }
 .archive-button {
+  margin-top: 21px  ;
+  padding: 8px 25px 7px 25px;
+  background-color: var(--link);
+  border: none;
+
+  font-size: 10px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  color: var(--main);
 }
 .stories {
 }
@@ -156,30 +207,71 @@ body{
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  width: 300px;
+  height: 190px;
 }
 .stories-two{
   background: url(/image/IMAGE\ \(2\)\ 2.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  width: 300px;
+  height: 190px;
 }
 .stories-three{
   background: url(/image/IMAGE\ \(3\)\ 2.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  width: 300px;
+  height: 190px;
 }
 .stories-list-item-author {
 }
 .stories-list-item-text {
 }
 .stories-text-anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 15px;
+  line-height: 30px;
+
 }
 .footer {
+  background-color: black;
+  height: 166px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .footer-text-f {
+  font-family: 'Lato';
+  font-size: 14px;
+  line-height: 28px;
+
+  color: var(--footer-text);
 }
 .footer-text-s {
+  font-family: 'Lato';
+  font-size: 14px;
+  line-height: 28px;
+
+  color: var(--footer-text);
 }
 .footer-text-t {
+  font-family: 'Lato';
+  font-size: 14px;
+  line-height: 28px;
+
+  color: var(--footer-text);
+}
+.link{
+  color: var(--link);
+  cursor: pointer;
 }
