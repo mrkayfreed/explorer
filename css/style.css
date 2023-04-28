@@ -45,15 +45,26 @@ body{
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  position: relative;
 }
-.container{
+.back:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background: rgba(0, 0, 0, 0.4);
-  border-radius: 0px;
+  z-index: 1;
 }
 .container-one{
   width: 800px;
   margin: 0 auto;
   padding-bottom: 99px;
+  
+  position: relative;
+  z-index: 3;
 }
 .header {
   padding-top: 60px;
@@ -95,8 +106,9 @@ body{
 }
 .article-list-item-container {
   height: 330px;
-
   border-top: 1px solid rgb(255, 255, 255) ; 
+
+  position: relative;
 }
 .article-one{
   background: url(/image/IMAGE\ \(1\)\ 1.jpg);
@@ -117,11 +129,13 @@ body{
   background-size: 100% 100%;
 }
 .container-label {
+  position: relative;
 }
 .container-label-text {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   text-align: right;
-  margin-top: 20px;
-  margin-right: 20px;
 
   font-size: 8px;
   line-height: 24px;
@@ -137,15 +151,36 @@ body{
   height: 25px;
 
 }
-.article-list-item-author {
+.article-list-cont{
+  position: absolute;
+  left: 60px;
+  bottom: 40px;
+}
+.article-list-item-author{
+  display: flex;
+  column-gap: 14px;
+  margin-bottom: 20px;
+}
+.article-list-item-author>img{
+  border-radius: 4px;
+  height: 40px;
 }
 .author-info {
 }
 .author-info-name {
+  line-height: 19px;
+  color: var(--main);
 }
 .author-info-date {
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--main);
 }
 .article-list-item-head {
+  font-size: 28px;
+  line-height: 35px;
+  color: var(--main);
+  font-weight: 150;
 }
 .article-list-item-continue {
   padding: 36px 76px 44px 60px;
@@ -250,6 +285,11 @@ body{
   align-items: center;
   justify-content: center;
 }
+.footer-text-list{
+  display: flex;
+  column-gap: 10px;
+
+}
 .footer-text-f {
   font-family: 'Lato';
   font-size: 14px;
@@ -272,6 +312,7 @@ body{
   color: var(--footer-text);
 }
 .link{
+  font-size: 13px;
   color: var(--link);
   cursor: pointer;
 }
