@@ -1,7 +1,8 @@
 :root{
   --main: #fff;
-  --link: #8D4FDB;
+  --link: #8D4FDB;  
   --archiv: #F1F1F1;
+  --subtitle: #A9AFB3;
   --footer-text: #8B8B8B;
 
 }
@@ -178,9 +179,9 @@ body{
 }
 .article-list-item-head {
   font-size: 28px;
+  font-weight: 400;
   line-height: 35px;
   color: var(--main);
-  font-weight: 150;
 }
 .article-list-item-continue {
   padding: 36px 76px 44px 60px;
@@ -226,93 +227,99 @@ body{
   color: var(--main);
 }
 .stories {
+  margin-top: 85px;
+}
+.stories-cont{
+  text-align: center;
 }
 .stories-header {
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
 }
 .stories-text {
+  font-family: 'Lato';
+  font-size: 23px;
+  line-height: 33px;
+  color: var(--subtitle);
+
+  margin-bottom: 56px;
 }
 .stories-list {
+  display: flex;
+  column-gap: 20px;
+  width: 940px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  margin-bottom: 56px;
 }
 .stories-list-item {
 }
 .stories-list-item-container {
+  width: 300px;
+  height: 190px;
+  border-radius: 3px;
+
+  margin-bottom: 23px;
 }
 .stories-one{
   background: url(/image/IMAGE\ \(1\)\ 2.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
-  width: 300px;
-  height: 190px;
 }
 .stories-two{
   background: url(/image/IMAGE\ \(2\)\ 2.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
-  width: 300px;
-  height: 190px;
 }
 .stories-three{
   background: url(/image/IMAGE\ \(3\)\ 2.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
-  width: 300px;
-  height: 190px;
 }
 .stories-list-item-author {
+}
+.stories-list-item-author>img{
+  border-radius: 4px;
+  height: 40px;
 }
 .stories-list-item-text {
 }
 .stories-text-anchor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  text-align: center;
+  
+  font-family: 'Lato';
+  font-weight: 400;
   font-size: 15px;
   line-height: 30px;
 
+  margin-bottom: 90px;
 }
 .footer {
   background-color: black;
   height: 166px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .footer-text-list{
-  display: flex;
-  column-gap: 10px;
+  font-family: 'Lato';
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--footer-text);
 
+  text-align: center;
 }
 .footer-text-f {
-  font-family: 'Lato';
-  font-size: 14px;
-  line-height: 28px;
-
-  color: var(--footer-text);
 }
 .footer-text-s {
-  font-family: 'Lato';
-  font-size: 14px;
-  line-height: 28px;
-
-  color: var(--footer-text);
 }
 .footer-text-t {
-  font-family: 'Lato';
-  font-size: 14px;
-  line-height: 28px;
-
-  color: var(--footer-text);
 }
 .link{
-  font-size: 13px;
   color: var(--link);
   cursor: pointer;
 }
