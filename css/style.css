@@ -84,13 +84,20 @@ body{
   width: 568px;
   justify-content: space-between;
 }
+.menu-item:hover{
+  box-sizing: content-box;
+  border-bottom: 2px solid var(--main);
+}
 .menu-item {
   cursor: pointer;
   font-size: 11px;
   line-height: 14px;
   letter-spacing: 1.3px;
   text-transform: uppercase;
-  color: var(--main)
+  color: var(--main);
+
+  padding-top: 12px;
+  padding-bottom: 14px;
 }
 .main {
 }
@@ -136,7 +143,6 @@ body{
   position: absolute;
   top: 20px;
   right: 20px;
-  text-align: right;
 
   font-size: 8px;
   line-height: 24px;
@@ -148,7 +154,6 @@ body{
   background: rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 1px 10px 0px 10px;
-  width: 60px;
   height: 25px;
 
 }
@@ -173,6 +178,7 @@ body{
   color: var(--main);
 }
 .author-info-date {
+  font-family: 'Lato';
   font-size: 13px;
   line-height: 19px;
   color: var(--main);
@@ -264,6 +270,19 @@ body{
   border-radius: 3px;
 
   margin-bottom: 23px;
+
+  position: relative;
+}
+
+.stories-list-item-author>.author-info>.author-info-name{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.stories-list-item-author>.author-info>.author-info-date{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
 }
 .stories-one{
   background: url(/image/IMAGE\ \(1\)\ 2.jpg);
@@ -284,10 +303,15 @@ body{
   background-size: 100% 100%;
 }
 .stories-list-item-author {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  display: flex;
+  column-gap: 8px;
 }
 .stories-list-item-author>img{
   border-radius: 4px;
-  height: 40px;
+  height: 35px;
 }
 .stories-list-item-text {
 }
@@ -304,22 +328,30 @@ body{
 .footer {
   background-color: black;
   height: 166px;
-}
-.footer-text-list{
+
+
   font-family: 'Lato';
   font-size: 14px;
   line-height: 28px;
   color: var(--footer-text);
-
   text-align: center;
+
+  padding-top: 55px;
+  padding-bottom: 45px;
+}
+.footer-text-list{
+  display: flex;
+  justify-content: center;
 }
 .footer-text-f {
 }
 .footer-text-s {
+  margin-right: 10px;
 }
 .footer-text-t {
 }
 .link{
   color: var(--link);
   cursor: pointer;
+  text-decoration: none;
 }
